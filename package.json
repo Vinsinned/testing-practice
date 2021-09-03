@@ -1,0 +1,22 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "This is a project to get comfortable with testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinsinned/testing-practice.git"
+  },
+  "author": "Vinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vinsinned/testing-practice/issues"
+  },
+  "homepage": "https://github.com/Vinsinned/testing-practice#readme",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
