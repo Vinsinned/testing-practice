@@ -3,6 +3,8 @@ const reverse = require('./reverse.js');
 const calculator = require('./calculator.js');
 const calculatorFunction = new calculator('1', 2);
 const cipher = require('./ceaser-cipher.js');
+const analyze = require('./array-analysis.js');
+const analyzeFunction = new analyze([5, -12, 26, 2, 13])
 
 test('Capitalize first letter', () => {
   expect(capitalize('asd')).toMatch(/Asd/);
@@ -43,4 +45,20 @@ test('Caesar cipher check for punctuation and pushes immediately', () => {
 test('Caesar cipher a random word', () => {
   expect(cipher('aasdz')).toMatch(/bbtea/);
   expect(cipher('VH\'Hehe!!')).toMatch(/WI'Ifif!!/);
+})
+
+test('Check average of an array', () => {
+  expect(analyzeFunction.average()).toBe(6.8);
+})
+
+test('Check the smallest number of an array', () => {
+  expect(analyzeFunction.min()).toBe(-12);
+})
+
+test('Check the largest number of an array', () => {
+  expect(analyzeFunction.max()).toBe(26);
+})
+
+test('Check the length of an array', () => {
+  expect(analyzeFunction.length()).toBe(5);
 })
